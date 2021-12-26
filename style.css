@@ -57,9 +57,9 @@ main {
   margin-top: 36px;
 }
 
-.timer {
+.time {
   background-color: #121214;
-  height: 80%;
+  height: 70%;
   border-radius: 8px;
   font-family: "Rajdhani", sans-serif;
 
@@ -115,8 +115,15 @@ main {
   font-size: 116px;
 }
 
+.wrapper-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 20px;
+}
+
 #start-time {
-  margin-top: 40px;
   outline: none;
   border: 0;
   width: 190px;
