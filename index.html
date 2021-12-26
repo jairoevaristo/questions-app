@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=Rajdhani:wght@400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+
+  <title>QuestionsApp | teste seus conhecimento</title>
+</head>
+<body>
+  <div class="progress-bar-container">
+    <div class="progress-bar"></div>
+  </div>
+  <span class="questions-number">1/10</span>
+  <main>
+    <div class="questions">
+      <div class="container-question">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab consequuntur, ratione doloribus fuga cum aliquam, exercitationem et sit maxime atque modi laudantium sunt cupiditate quod ipsa enim rerum aperiam unde?</p>
+      </div>
+
+      <div class="options">
+        <div class="option-error">
+          <span class="option-text">adipisicing</span>
+        </div>
+        <div class="option-correct">
+          <span class="option-text">exercitationem</span>
+        </div>
+        <div id="question">
+          <span class="option-text">consectetur</span>
+        </div>
+        <div id="question">
+          <span class="option-text">consequuntur</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="timer">
+      <h1 class="time-number">06:32</h1>
+      <button id="start-time">Iniciar</button>
+    </div>
+  </main>
+
+  <script type="module">
+    import { App } from './src/App.js'
+    App.init();
+  </script>
+</body>
+</html>

@@ -1,0 +1,163 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body,
+input,
+a,
+textarea {
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  background-color: #000;
+  color: #ffff;
+  overflow: hidden;
+
+  width: 100%;
+  height: 100vh;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.progress-bar-container {
+  width: 100%;
+  height: 10px;
+  border-radius: 10px;
+  background-color: #121214;
+
+  margin: 20px 0;
+}
+
+.progress-bar {
+  background-color: #44bd32;
+  width: 30%;
+  height: 10px;
+  border-radius: 10px;
+
+  margin: 20px 0;
+  z-index: 9999;
+}
+
+.questions-number {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+main {
+  width: 100%;
+  height: 100%;
+
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+
+  margin-top: 36px;
+}
+
+.timer {
+  background-color: #121214;
+  height: 80%;
+  border-radius: 8px;
+  font-family: "Rajdhani", sans-serif;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  padding: 12px 0;
+}
+
+.questions {
+  width: 90%;
+}
+
+.container-question {
+  font-size: 24px;
+  line-height: 36px;
+  font-weight: 400;
+}
+
+.options {
+  margin-top: 40px;
+}
+
+#question {
+  width: 90%;
+  height: 70px;
+
+  margin-bottom: 20px;
+  padding: 0 20px;
+
+  display: flex;
+  align-items: center;
+
+  border-radius: 4px;
+  background-color: #121214;
+
+  cursor: pointer;
+  transition: all ease-in-out 0.2s;
+}
+
+#question:hover {
+  transform: translateY(-3px);
+}
+
+.option-text {
+  text-align: left;
+  font-size: 20px;
+}
+
+.time-number {
+  font-size: 116px;
+}
+
+#start-time {
+  margin-top: 40px;
+  outline: none;
+  border: 0;
+  width: 190px;
+  height: 48px;
+  border-radius: 4px;
+  font-size: 18px;
+  background-color: #192a56;
+  color: #fff;
+  cursor: pointer;
+}
+
+.option-error {
+  width: 90%;
+  height: 70px;
+
+  margin-bottom: 20px;
+  padding: 0 20px;
+
+  display: flex;
+  align-items: center;
+
+  background-color: #c23616;
+  border-radius: 4px;
+
+  cursor: pointer;
+  transition: all ease-in-out 0.2s;
+}
+
+.option-correct {
+  width: 90%;
+  height: 70px;
+
+  margin-bottom: 20px;
+  padding: 0 20px;
+
+  display: flex;
+  align-items: center;
+
+  border-radius: 4px;
+  background-color: #44bd32;
+
+  cursor: pointer;
+  transition: all ease-in-out 0.2s;
+}
