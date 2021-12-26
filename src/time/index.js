@@ -3,7 +3,7 @@ import { ViewTimer } from '../view/Timer.js';
 
 const Timer = {
   currentTime: 0,
-  time: 0.1 * 60,
+  time: 0.5 * 60,
   interval: null,
 
   timeToMinutes: time => Math.floor(time / 60),
