@@ -2,6 +2,8 @@ import { Emitter } from "./lib/Emitter.js";
 import { Timer } from "./time/index.js";
 import { Question } from "./view/Question.js";
 
+const numberQuestions = document.querySelector('.questions-number');
+
 const App = {
   init() {
     Timer.start(0.5);
@@ -14,6 +16,8 @@ const App = {
     );
     const questions = await response.json();
     Question.render(questions.results[0]);
+
+    numberQuestions.textContent = `1/${questions.results.length}`;
   },
 };
 
