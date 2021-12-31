@@ -17,10 +17,21 @@ const Question = {
       optionCorrect: result.correct_answer,
     };
 
-    optionsQuestios.content.forEach((item) => {
-      options.innerHTML += `<div id="question">
-        <span class="option-text">${item}</span>
-      </div>`;
+    optionsQuestios.content.forEach((item, index) => {
+      let span = document.createElement('span');
+      const container = document.createElement('div');
+
+      span.innerText = item;
+      span.classList = `option-text option-${index}`
+
+      container.id = 'question'
+      container.classList = `question-${index}`
+      container.appendChild(span);
+      options.append(container);
+
+      document.querySelector(`.question-${index}`).addEventListener('click', () => {
+        console.log(document.querySelector(`.option-${index}`).textContent)
+      })
     });
   },
 };
